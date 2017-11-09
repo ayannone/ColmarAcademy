@@ -26,11 +26,10 @@ html {
 /* Header */
 /* ****** */
 
-header {
+.desktop {
   display: flex;
   justify-content: space-between;
 }
-
 
 /* ****************************************** */
 /* Styling for screens with max-width = 760px */
@@ -40,6 +39,8 @@ header {
 
   .mobile {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .desktop {
