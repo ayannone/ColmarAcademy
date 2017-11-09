@@ -79,7 +79,7 @@ html {
   width: 60%;
 }
 
-.information-main .image-container img  {
+.information-main .media-container img  {
   max-width: 100%;
   height: auto;
 }
@@ -133,7 +133,36 @@ html {
 /* Thesis exhibit Section */
 /* ********************** */
 
+#thesis-exhibit {
+ display: flex;
+}
 
+.information-main {
+  width: 60%;
+}
+
+.information-main .media-container video  {
+  max-width: 100%;
+  height: auto;
+}
+
+#thesis-exhibit .infoboxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.infobox-thesis {
+  display: inline-flex;
+}
+
+.infobox-thesis .image-container {
+  width: 35%;
+}
+
+.infobox-thesis .image-container img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
