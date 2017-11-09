@@ -84,8 +84,22 @@ html {
   height: auto;
 }
 
+#campus-information .infoboxes {
+  display: flex;
+  flex-direction: column;
+}
+
 .infobox-campus {
   display: inline-flex;
+}
+
+.infobox-campus .image-container {
+  width: 35%;
+}
+
+.infobox-campus .image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ****************************************************************** */
@@ -94,9 +108,23 @@ html {
 /* Course Information Section */
 /* ************************** */
 
+#course-information {
+  display: flex;
+  flex-direction: column;
+}
 
+#course-information .infoboxes {
+  display: inline-flex;
+}
 
+.infobox-course .image-container {
 
+}
+
+.infobox-course .image-container img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* ****************************************************************** */
