@@ -68,17 +68,30 @@ html {
 /* ****************************************************************** */
 
 /* ************************** */
-/* Campus information Section */
+/* Campus Information Section */
 /* ************************** */
 
+#campus-information {
+ display: flex;
+}
 
+.information-main {
+  width: 60%;
+}
 
+.information-main .image-container img  {
+  max-width: 100%;
+  height: auto;
+}
 
+.infobox-campus {
+  display: inline-flex;
+}
 
 /* ****************************************************************** */
 
 /* ************************** */
-/* Course information Section */
+/* Course Information Section */
 /* ************************** */
 
 
