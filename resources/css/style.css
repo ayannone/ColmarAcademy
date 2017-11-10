@@ -3,7 +3,7 @@
 /* **************** */
 
 html {
-
+  font-size: 16px;
 }
 
 .mobile {
@@ -34,6 +34,19 @@ h3 {
   color: #f48fb1;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.content a {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #f48fb1;
+  color: #49599a;
+}
+
 /* ****************************************************************** */
 
 /* ****** */
@@ -41,12 +54,18 @@ h3 {
 /* ****** */
 
 header {
+  height: 4rem;
   background-color: #bf5f82;
 }
 
 .desktop-nav {
   display: flex;
   justify-content: space-between;
+}
+
+.desktop-nav #logo {
+  height: 1rem;
+  background-color: orange;
 }
 
 /* ****************************************** */
@@ -87,6 +106,7 @@ header {
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #f48fb1;
+  color: #ffffff;
 }
 
 /* ****************************************** */
