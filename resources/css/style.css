@@ -26,14 +26,23 @@ html {
 /* Main content */
 /****************/
 
+h1, h2 {
+  color: #bf5f82;
+}
 
-
+h3 {
+  color: #f48fb1;
+}
 
 /* ****************************************************************** */
 
 /* ****** */
 /* Header */
 /* ****** */
+
+header {
+  background-color: #bf5f82;
+}
 
 .desktop-nav {
   display: flex;
@@ -61,6 +70,7 @@ html {
 
 #learn-more {
   display: flex;
+  background-color: #d3d3d3;
 }
 
 .banner .image-container {
@@ -70,6 +80,13 @@ html {
 .banner .image-container img {
   max-width: 100%;
   height: auto;
+}
+
+#learn-more .button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f48fb1;
 }
 
 /* ****************************************** */
@@ -93,6 +110,7 @@ html {
 
 #campus-information {
  display: flex;
+ background-color: #eeeeee;
 }
 
 .information-main {
@@ -145,6 +163,7 @@ html {
 #course-information {
   display: flex;
   flex-direction: column;
+  background-color: #d3d3d3;
 }
 
 #course-information .infoboxes {
@@ -176,7 +195,13 @@ html {
 /* ********************** */
 
 #thesis-exhibit {
- display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+
+#thesis-exhibit .content-main {
+  display: inline-flex;
 }
 
 .information-main .media-container video  {
@@ -212,4 +237,5 @@ html {
 footer {
   display: flex;
   justify-content: space-between;
+  background-color: #bf5f82;
 }
