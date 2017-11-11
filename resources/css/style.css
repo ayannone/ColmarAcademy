@@ -372,5 +372,10 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 1.5rem 3rem;
   background-color: #bf5f82;
+}
+
+footer nav span {
+  padding-left: 1rem;
 }
