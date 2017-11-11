@@ -145,7 +145,6 @@ header {
   color: whitesmoke;
 }
 
-
 /* ****************************************** */
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
@@ -170,18 +169,18 @@ header {
  background-color: #eeeeee;
 }
 
-.information-main {
+#campus-information .information-main {
   flex-direction: column;
   width: 60%;
   padding: 2rem 1.5rem;
 }
 
-.information-main .media-container img  {
+#campus-information .information-main .media-container img  {
   max-width: 100%;
   height: auto;
 }
 
-.information-main .content p:last-child {
+#campus-information .information-main .content p:last-child {
   margin-top: 1.5rem;
   font-size: 0.85rem;
 }
@@ -201,7 +200,8 @@ header {
 }
 
 .infobox-campus:last-child {
-  background-color: #d3d3d3;
+  /*background-color: #d3d3d3;*/
+  background-color: orange;
 }
 
 .infobox-campus .image-container {
@@ -223,7 +223,6 @@ header {
   margin-top: 0.5rem;
   color: #49599a;
 }
-
 
 /* ****************************************** */
 /* Styling for screens with max-width = 760px */
@@ -299,8 +298,23 @@ header {
   background-color: #eeeeee;
 }
 
+#thesis-exhibit h2 {
+  margin: 2rem auto;
+}
+
+#thesis-exhibit h3 {
+  margin-top: 1.5rem;
+}
+
 #thesis-exhibit .content-main {
   display: inline-flex;
+  padding-left: 1.5rem;
+}
+
+#thesis-exhibit .information-main {
+  flex-direction: column;
+  width: 60%;
+  padding: 0 1.5rem 2rem 0;
 }
 
 .information-main .media-container video  {
@@ -315,6 +329,12 @@ header {
 
 .infobox-thesis {
   display: inline-flex;
+  padding: 1rem;
+  /*background-color: #d3d3d3;*/
+}
+
+.infobox-thesis:first-child {
+  background-color: orange;
 }
 
 .infobox-thesis .image-container {
@@ -324,6 +344,22 @@ header {
 .infobox-thesis .image-container img {
   max-width: 100%;
   height: auto;
+}
+
+.infobox-thesis .content {
+  width: 65%;
+  margin-left: 1rem;
+}
+
+/* ****************************************** */
+/* Styling for screens with max-width = 760px */
+/* ****************************************** */
+
+@media only screen and (max-width: 760px) {
+
+  .infobox-thesis {
+    display: none;
+  }
 }
 
 
