@@ -27,6 +27,7 @@ html {
 /****************/
 
 h1, h2 {
+  font-size: 3rem;
   color: #bf5f82;
 }
 
@@ -39,6 +40,9 @@ a {
   color: black;
 }
 
+.content p {
+  margin-top: 0.5rem;
+}
 /* ****************************************************************** */
 
 /* ****** */
@@ -106,6 +110,7 @@ header {
 
 .banner .image-container {
   width: 60%;
+  padding: 2rem 1.5rem;
 }
 
 .banner .image-container img {
@@ -113,10 +118,25 @@ header {
   height: auto;
 }
 
+#learn-more .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.teaser {
+  /*padding: 2rem;*/
+  width: 75%;
+}
+
+#learn-more .content p {
+  font-size: 1.5rem;
+}
+
 #learn-more .button {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 0.5rem;
   text-align: center;
   background-color: #f48fb1;
 }
@@ -151,8 +171,9 @@ header {
 }
 
 .information-main {
-  width: 60%;
   flex-direction: column;
+  width: 60%;
+  padding: 2rem 1.5rem;
 }
 
 .information-main .media-container img  {
@@ -163,10 +184,15 @@ header {
 #campus-information .infoboxes {
   display: flex;
   flex-direction: column;
+  width: 40%;
+  padding: 1rem 0 2rem;
+  border-left: 1px solid lightgrey;
 }
 
 .infobox-campus {
   display: inline-flex;
+  padding: 1rem;
+  border: 1px solid lightgrey;
 }
 
 .infobox-campus .image-container {
@@ -178,10 +204,14 @@ header {
   height: auto;
 }
 
+.infobox-campus .content {
+  width: 65%;
+  margin-left: 1rem;
+}
+
 .infobox-campus .button {
-  margin: 10px;
+  margin-top: 1rem;
   padding: 5px;
-  border-radius: 3px;
   text-align: center;
   background-color: #f48fb1;
 }
