@@ -48,16 +48,36 @@ a {
 header {
   height: 4rem;
   background-color: #bf5f82;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .desktop-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
 }
 
 .desktop-nav #logo {
-  height: 1rem;
-  background-color: orange;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav #logo span:last-child {
+  color: whitesmoke;
+}
+
+.desktop-nav nav span {
+  padding-left: 1rem;
+}
+
+.anchor {
+  display: block;
+  height: 4rem;
+  visibility: hidden;
 }
 
 /* ****************************************** */
@@ -102,7 +122,7 @@ header {
 }
 
 #learn-more .button a {
-  color: #ffffff;
+  color: whitesmoke;
 }
 
 
