@@ -126,7 +126,6 @@ header {
 }
 
 .teaser {
-  /*padding: 2rem;*/
   width: 75%;
 }
 
@@ -181,6 +180,11 @@ header {
   height: auto;
 }
 
+.information-main .content p:last-child {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+}
+
 #campus-information .infoboxes {
   display: flex;
   flex-direction: column;
@@ -193,6 +197,10 @@ header {
   display: inline-flex;
   padding: 1rem;
   border: 1px solid lightgrey;
+}
+
+.infobox-campus:last-child {
+  background-color: #d3d3d3;
 }
 
 .infobox-campus .image-container {
@@ -209,14 +217,9 @@ header {
   margin-left: 1rem;
 }
 
-.infobox-campus .button {
-  margin-top: 1rem;
-  padding: 5px;
-  text-align: center;
-  background-color: #f48fb1;
-}
-
-.infobox-campus .button a {
+.infobox-campus a {
+  display: inline-block;
+  margin-top: 0.5rem;
   color: #49599a;
 }
 
