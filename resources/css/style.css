@@ -137,7 +137,8 @@ header {
   margin-top: 2rem;
   padding: 0.5rem;
   text-align: center;
-  background-color: #f48fb1;
+  /*background-color: #f48fb1;*/
+  background-color: orange;
 }
 
 #learn-more .button a {
@@ -249,13 +250,28 @@ header {
   background-color: #d3d3d3;
 }
 
+#course-information h2 {
+  margin: 2rem auto;
+}
+
 #course-information .infoboxes {
   display: inline-flex;
+  margin: 0 3.5rem 2rem 3.5rem;
+}
+
+.infobox-course {
+  width: 100%;
+  margin: 0 1rem;
+  background-color: #eeeeee;
 }
 
 .infobox-course .image-container img {
   max-width: 100%;
   height: auto;
+}
+
+.infobox-course .content {
+  padding: 1rem 1rem 1.5rem;
 }
 
 /* ****************************************** */
