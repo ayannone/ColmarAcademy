@@ -134,15 +134,16 @@ header {
 }
 
 .teaser {
-  width: 75%;
+  margin-right: 1.5rem;
 }
 
 #learn-more .content p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-top: 2rem;
 }
 
 #learn-more .button {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   padding: 0.5rem;
   text-align: center;
   /*background-color: #f48fb1;*/
@@ -161,6 +162,19 @@ header {
 
   #learn-more {
     flex-direction: column;
+  }
+
+  .banner .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #learn-more .content {
+    width: 100%;
+  }
+
+  .teaser {
+    margin: 2rem 1rem;
   }
 
 }
