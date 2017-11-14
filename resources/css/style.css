@@ -521,10 +521,26 @@ header {
 /*@media only screen and (max-width: 760px) {*/
 @media only screen and (max-width: 600px) {
 
+  #thesis-exhibit h2 {
+    margin-bottom: 1rem;
+  }
+
+  #thesis-exhibit .content-main {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  #thesis-exhibit .information-main {
+    width: 100%;
+    padding: 0;
+  }
+
   .infobox-thesis {
     display: none;
   }
+
 }
+
 
 /* ****************************************************************** */
 
@@ -541,4 +557,21 @@ footer {
 
 footer nav span {
   padding-left: 1rem;
+}
+
+/* ****************************************** */
+/* Styling for screens with max-width = 760px */
+/* ****************************************** */
+
+/* ****************************************** */
+/* Styling for screens with max-width = 600px */
+/* ****************************************** */
+
+/*@media only screen and (max-width: 760px) {*/
+@media only screen and (max-width: 600px) {
+
+  footer {
+    padding: 1rem;
+  }
+
 }
