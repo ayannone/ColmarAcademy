@@ -461,8 +461,13 @@ header {
   margin: 2rem auto;
 }
 
-#thesis-exhibit h3 {
+.information-main .content h3 {
   margin-top: 1.5rem;
+}
+
+#thesis-exhibit .information-main .content p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
 #thesis-exhibit .content-main {
@@ -488,8 +493,8 @@ header {
 
 .infobox-thesis {
   display: inline-flex;
+  align-items: center;
   padding: 1rem;
-  /*background-color: #d3d3d3;*/
 }
 
 .infobox-thesis:first-child {
