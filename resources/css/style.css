@@ -421,8 +421,25 @@ header {
 /*@media only screen and (max-width: 760px) {*/
 @media only screen and (max-width: 600px) {
 
+  #course-information {
+    background-color: #eeeeee;
+  }
+
+  #course-information h2 {
+    margin-bottom: 1rem;
+  }
+
   #course-information .infoboxes {
     flex-direction: column;
+    margin: 0;
+  }
+
+  .infobox-course .content {
+    width: 100%;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 0 2rem 1rem;
+    background-color: #d3d3d3;
   }
 
 }
