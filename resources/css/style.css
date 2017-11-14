@@ -15,11 +15,11 @@ html {
 /* ****************************************** */
 
 /* ****************************************** */
-/* Styling for screens with max-width = 610px */
+/* Styling for screens with max-width = 600px */
 /* ****************************************** */
 
 /*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 600px) {
 
   .mobile {
     display: flex;
@@ -35,11 +35,19 @@ html {
 /****************/
 
 h1, h2 {
-  font-size: 3rem;
   color: #bf5f82;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 h3 {
+  font-size: 2rem;
   color: #f48fb1;
 }
 
@@ -99,11 +107,11 @@ header {
 /* ****************************************** */
 
 /* ****************************************** */
-/* Styling for screens with max-width = 610px */
+/* Styling for screens with max-width = 600px */
 /* ****************************************** */
 
 /*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 600px) {
 
   .desktop {
     display: none;
@@ -170,14 +178,43 @@ header {
 }
 
 /* ****************************************** */
-/* Styling for screens with max-width = 777px */
+/* Styling for screens with max-width = 940px */
 /* ****************************************** */
 
-@media only screen and (max-width: 777px) {
+@media only screen and (max-width: 940px) {
 
   h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
     font-size: 2rem;
   }
+
+  #learn-more .content p {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media only screen and (max-width: 775px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
 
   #learn-more .content p {
     font-size: 1.3rem;
@@ -227,18 +264,26 @@ header {
  background-color: #eeeeee;
 }
 
-#campus-information .information-main {
+.information-main {
   flex-direction: column;
   width: 60%;
   padding: 2rem 1.5rem;
 }
 
-#campus-information .information-main .media-container img  {
+.information-main .media-container img  {
   max-width: 100%;
   height: auto;
 }
 
-#campus-information .information-main .content p:last-child {
+.information-main .content {
+  margin-top: 2rem;
+}
+
+.information-main .content p:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.information-main .content p:last-of-type {
   margin-top: 1.5rem;
   font-size: 0.85rem;
 }
@@ -253,6 +298,7 @@ header {
 
 .infobox-campus {
   display: inline-flex;
+  align-items: center;
   padding: 1rem;
   border: 1px solid lightgrey;
 }
@@ -322,9 +368,7 @@ header {
 
   #campus-information .content {
     width: 100%;
-    margin-left: 0;
-
-    background-color: blue;
+    margin-top: 1.5rem;
   }
 
 }
@@ -464,7 +508,6 @@ header {
     display: none;
   }
 }
-
 
 /* ****************************************************************** */
 
