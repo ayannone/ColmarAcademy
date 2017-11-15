@@ -2,8 +2,59 @@
 /* Universal Styles */
 /* **************** */
 
+/*
+font-family: 'Lato', sans-serif; -- default font --
+font-family: 'Kaushan Script', cursive; -- h1 --
+font-family: 'Caveat', cursive; -- h2 --
+*/
+
+/*
+background-color: #bf5f82; -- header, footer --
+background-color: #d3d3d3; -- #learn-more, #course-information, .infobox-course .content (mobile) --
+background-color: #ffa500; -- learn-more .button, .infobox-campus:last-child, .infobox-thesis:first-child --
+background-color: #eeeeee; -- #campus-information, .infobox-campus:last-child, .infobox-course, #course-information (mobile), #thesis-exhibit --
+*/
+
+/*
+color: #983352; -- h1, h2, infobox-campus:last-child h3, .infobox-thesis:first-child h3 --
+color: #f48fb1; -- h3 --
+color: whitesmoke; -- .desktop-nav #logo span:last-child, #learn-more .button a --
+color: #49599a; -- .infobox-campus a --
+color: #aeaeae; -- .infobox-course .content p:first-of-type --
+color: #000000; -- a --
+*/
+
 html {
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+  color: #983352;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #f48fb1;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.content p {
+  margin-top: 0.5rem;
 }
 
 .mobile {
@@ -14,12 +65,7 @@ html {
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
 
-/* ****************************************** */
-/* Styling for screens with max-width = 600px */
-/* ****************************************** */
-
-/*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
 
   .mobile {
     display: flex;
@@ -34,31 +80,6 @@ html {
 /* Main content */
 /****************/
 
-h1, h2 {
-  color: #bf5f82;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
-  color: #f48fb1;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.content p {
-  margin-top: 0.5rem;
-}
 
 
 /* ****************************************************************** */
@@ -106,12 +127,7 @@ header {
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
 
-/* ****************************************** */
-/* Styling for screens with max-width = 600px */
-/* ****************************************** */
-
-/*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
 
   .desktop {
     display: none;
@@ -169,19 +185,19 @@ header {
   margin-top: 1.5rem;
   padding: 0.5rem;
   text-align: center;
-  /*background-color: #f48fb1;*/
-  background-color: orange;
+  background-color: #ffa500;
 }
 
 #learn-more .button a {
   color: whitesmoke;
+  font-size: 2rem;
 }
 
 /* ****************************************** */
 /* Styling for screens with max-width = 940px */
 /* ****************************************** */
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 964px) {
 
   h1 {
     font-size: 3rem;
@@ -192,16 +208,20 @@ header {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   #learn-more .content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  #learn-more .button a {
+    font-size: 1.2rem;
   }
 
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 760px) {
 
   h1 {
     font-size: 2.5rem;
@@ -215,7 +235,6 @@ header {
     font-size: 1.5rem;
   }
 
-
   #learn-more .content p {
     font-size: 1.3rem;
   }
@@ -226,12 +245,7 @@ header {
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
 
-/* ****************************************** */
-/* Styling for screens with max-width = 600px */
-/* ****************************************** */
-
-/*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
 
   #learn-more {
     flex-direction: column;
@@ -281,11 +295,14 @@ header {
 
 .information-main .content p:first-of-type {
   margin-top: 1.5rem;
+  font-style: italic;
 }
 
 .information-main .content p:last-of-type {
   margin-top: 1.5rem;
   font-size: 0.85rem;
+  font-weight: 300;
+  font-style: italic;
 }
 
 #campus-information .infoboxes {
@@ -304,8 +321,11 @@ header {
 }
 
 .infobox-campus:last-child {
-  /*background-color: #d3d3d3;*/
-  background-color: orange;
+  background-color: #ffa500;
+}
+
+.infobox-campus:last-child h3 {
+  color: #983352;
 }
 
 .infobox-campus .image-container {
@@ -315,7 +335,6 @@ header {
 .infobox-campus .image-container img {
   max-width: 100%;
   height: auto;
-
 }
 
 .infobox-campus .content {
@@ -333,13 +352,7 @@ header {
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
 
-/* ****************************************** */
-/* Styling for screens with max-width = 600px */
-/* ****************************************** */
-
-/*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 760px) {
 
   #campus-information .infoboxes {
     width: 100%;
@@ -410,16 +423,15 @@ header {
   padding: 1rem 1rem 1.5rem;
 }
 
+.infobox-course .content p:first-of-type {
+  color: #aeaeae;
+}
+
 /* ****************************************** */
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
 
-/* ****************************************** */
-/* Styling for screens with max-width = 600px */
-/* ****************************************** */
-
-/*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
 
   #course-information {
     background-color: #eeeeee;
@@ -498,7 +510,11 @@ header {
 }
 
 .infobox-thesis:first-child {
-  background-color: orange;
+  background-color: #ffa500;
+}
+
+.infobox-thesis:first-child h3 {
+  color: #983352;
 }
 
 .infobox-thesis .image-container {
@@ -519,12 +535,7 @@ header {
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
 
-/* ****************************************** */
-/* Styling for screens with max-width = 600px */
-/* ****************************************** */
-
-/*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
 
   #thesis-exhibit h2 {
     margin-bottom: 1rem;
@@ -568,12 +579,7 @@ footer nav span {
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
 
-/* ****************************************** */
-/* Styling for screens with max-width = 600px */
-/* ****************************************** */
-
-/*@media only screen and (max-width: 760px) {*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
 
   footer {
     padding: 1rem;
