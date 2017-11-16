@@ -147,6 +147,14 @@ header nav a:hover {
     margin: 1rem 1.5rem;
   }
 
+  .mobile nav a {
+    transition: filter 1s ease;
+  }
+
+  .mobile nav a:hover {
+    filter: invert(100%);
+  }
+
 }
 
 
