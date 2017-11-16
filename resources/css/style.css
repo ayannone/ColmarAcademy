@@ -51,6 +51,11 @@ h3 {
 a {
   text-decoration: none;
   color: #000000;
+  transition: color 300ms;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 .content p {
@@ -181,17 +186,21 @@ header {
   margin-top: 2rem;
 }
 
-#learn-more .button {
+#learn-more a {
+  display: block;
   margin-top: 1.5rem;
   padding: 0.5rem;
   text-align: center;
   background-color: #ffa500;
-}
-
-#learn-more .button a {
   color: whitesmoke;
   font-size: 2rem;
+  transition: background-color 0.5s;
 }
+
+#learn-more a:hover {
+  background-color: #e06e04;
+}
+
 
 /* ****************************************** */
 /* Styling for screens with max-width = 940px */
@@ -346,6 +355,15 @@ header {
   display: inline-block;
   margin-top: 0.5rem;
   color: #49599a;
+  transition: color 300ms;
+}
+
+.infobox-campus a:hover {
+  color: #ffa500;
+}
+
+.infobox-campus:last-of-type a:hover {
+  color: #eeeeee;
 }
 
 /* ****************************************** */
