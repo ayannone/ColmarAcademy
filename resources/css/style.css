@@ -54,10 +54,6 @@ a {
   transition: color 300ms;
 }
 
-a:hover {
-  color: #ffffff;
-}
-
 .content p {
   margin-top: 0.5rem;
 }
@@ -100,6 +96,11 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 5;
+}
+
+header nav a:hover {
+  color: #ffffff;
 }
 
 .desktop-nav {
@@ -212,10 +213,6 @@ header {
     font-size: 3rem;
   }
 
-  h2 {
-    font-size: 2.5rem;
-  }
-
   h3 {
     font-size: 1.3rem;
   }
@@ -231,14 +228,6 @@ header {
 }
 
 @media only screen and (max-width: 760px) {
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
 
   h3 {
     font-size: 1.5rem;
@@ -432,6 +421,19 @@ header {
   background-color: #eeeeee;
 }
 
+.infobox-course {
+  opacity: 1;
+  transition: opacity 500ms ease-out 100ms;
+}
+
+.infobox-course:hover {
+  opacity: 0.7;
+}
+
+.infobox-course .content p:hover {
+  color: #983352;
+}
+
 .infobox-course .image-container img {
   max-width: 100%;
   height: auto;
@@ -457,6 +459,7 @@ header {
 
   #course-information h2 {
     margin-bottom: 1rem;
+    font-size: 3rem;
   }
 
   #course-information .infoboxes {
@@ -464,12 +467,19 @@ header {
     margin: 0;
   }
 
-  .infobox-course .content {
+  .infobox-course:hover {
+    opacity: 0.5;
+  }
+
+  .infobox-course a {
     width: 100%;
     margin-right: 2rem;
     margin-bottom: 0.5rem;
-    padding: 1rem 0 2rem 1rem;
     background-color: #d3d3d3;
+  }
+
+  .infobox-course .content {
+    padding: 1rem 0 2rem 1rem;
   }
 
 }
@@ -521,7 +531,7 @@ header {
   flex-direction: column;
 }
 
-.infobox-thesis {
+.infobox-thesis a {
   display: inline-flex;
   align-items: center;
   padding: 1rem;
@@ -529,9 +539,33 @@ header {
 
 .infobox-thesis:first-child {
   background-color: #ffa500;
+  opacity: 1;
+  transition: opacity 500ms ease-out 100ms;
+}
+
+.infobox-thesis:first-child:hover {
+  opacity: 0.7;
 }
 
 .infobox-thesis:first-child h3 {
+  color: #983352;
+}
+
+.infobox-thesis:last-child {
+  opacity: 1;
+  transition: opacity 500ms ease-out 100ms, background-color 500ms ease-out 100ms;
+}
+
+.infobox-thesis:last-child:hover {
+  opacity: 0.7;
+  background-color: lightgrey;
+}
+
+.infobox-thesis:last-child h3 {
+  transition: color 500ms ease-out 100ms;
+}
+
+.infobox-thesis:last-child:hover h3 {
   color: #983352;
 }
 
@@ -557,6 +591,7 @@ header {
 
   #thesis-exhibit h2 {
     margin-bottom: 1rem;
+    font-size: 3rem;
   }
 
   #thesis-exhibit .content-main {
