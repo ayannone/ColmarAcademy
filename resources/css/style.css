@@ -399,6 +399,11 @@ header nav a:hover {
     margin-top: 1.5rem;
   }
 
+  .infobox-campus:last-of-type a:hover {
+    color: #ffa500;
+  }
+
+
 }
 
 
@@ -472,22 +477,33 @@ header nav a:hover {
 
   #course-information .infoboxes {
     flex-direction: column;
-    margin: 0;
+    align-items: center;
+    margin: 0 1rem;
+  }
+
+  .infobox-course {
+    margin-bottom: 0.5rem;
+    background-color: #d3d3d3;
+    transition: all 0.3s ease-out 0.2s;
   }
 
   .infobox-course:hover {
-    opacity: 0.5;
+    opacity: 0.8;
+    box-shadow: 5px 5px 2px #888888;
+    background-color: #ffa500;
   }
 
   .infobox-course a {
     width: 100%;
     margin-right: 2rem;
-    margin-bottom: 0.5rem;
-    background-color: #d3d3d3;
   }
 
-  .infobox-course .content {
-    padding: 1rem 0 2rem 1rem;
+  .infobox-course a h3 {
+    transition: color 0.3s ease-out 0.2s;
+  }
+
+  .infobox-course:hover a h3 {
+    color: #983352;
   }
 
 }
