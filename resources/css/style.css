@@ -210,9 +210,8 @@ header nav a:hover {
   background-color: #e06e04;
 }
 
-
 /* ****************************************** */
-/* Styling for screens with max-width = 940px */
+/* Styling for screens with max-width = 964px */
 /* ****************************************** */
 
 @media only screen and (max-width: 964px) {
@@ -235,18 +234,6 @@ header nav a:hover {
 
 }
 
-@media only screen and (max-width: 760px) {
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  #learn-more .content p {
-    font-size: 1.3rem;
-  }
-
-}
-
 /* ****************************************** */
 /* Styling for screens with max-width = 760px */
 /* ****************************************** */
@@ -257,17 +244,25 @@ header nav a:hover {
     flex-direction: column;
   }
 
-  .banner .image-container {
-    width: 100%;
-    padding: 0;
-  }
-
   #learn-more .content {
     width: 100%;
   }
 
   .teaser {
     margin: 2rem 1rem;
+  }
+
+  #learn-more .content p {
+    font-size: 1.3rem;
+  }
+
+  .banner .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
 }
@@ -402,7 +397,6 @@ header nav a:hover {
   .infobox-campus:last-of-type a:hover {
     color: #ffa500;
   }
-
 
 }
 
